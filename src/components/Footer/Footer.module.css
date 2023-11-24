@@ -1,0 +1,161 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #292929;
+    padding: 3rem;
+    width: 100%;
+    max-width: 1920px;
+}
+.footer div h3{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.footer div p{
+    margin-bottom: 5px;	
+}
+.footer div p a{
+    color: #fff;
+    text-decoration: none;
+
+}
+.footer div p a:hover{
+    text-decoration: underline;
+}
+.footer .rodapeNome h2{
+    color: #fff;
+    font-size: 40px;
+}
+.footer .rodapeNome h2 .span1{
+    color: gray;
+}
+.footer .socialmedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.footer .socialmedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.footer .socialmedia div{
+    display: flex;
+    justify-content: center;
+    gap: .2rem;
+}
+.footer .socialmedia i{
+    font-size: 2rem;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+
+.footer .socialmedia i:nth-child(1){
+    color: rgb(57, 57, 216);
+}
+
+.footer .socialmedia i:nth-child(2){
+    color: pink;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    border-radius: .2rem;
+    padding: .1rem;
+}
+
+.footer .socialmedia i:nth-child(4){
+    color: rgb(207, 10, 10);
+}
+
+.footer .socialmedia i:hover{
+    transform: scale(1.1);
+}
+
+.footer button{
+    padding: 15px;
+    border-radius: 25px;
+    width: 100%;
+    background-color: gray;
+    border: none;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 20px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.footer button:hover{
+    transform: scale(1.08);
+}
+.redes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.redes h2{
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contatos p:hover{
+    text-decoration: underline;
+}
+
+.credito{
+    width: 100%;
+    max-width: 1920px;
+    padding: 10px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+}
+
+.credito p{
+    color: #fff;
+    text-decoration: none;
+}
+.credito p a{
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+
+.categMobile{
+    display: none;
+}
+.section2-0{
+    display: none;
+}
+
+@media (max-width: 800px){
+    .footer .rodapeNome h2{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .footer div{
+        margin: 10px;
+    }
+
+    .div1 h2{
+        font-size: 20px;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+    .contatos{
+        margin-top: 20px;
+    }
+    .redes{
+        margin-top: 30px;
+    }
+}
+

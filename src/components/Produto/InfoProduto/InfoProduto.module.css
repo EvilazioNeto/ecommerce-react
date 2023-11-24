@@ -1,0 +1,57 @@
+.title{
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.cep input{
+    margin-inline: 0rem .5rem;
+    padding: 1rem;
+    width: calc(65% - .5rem);
+}
+
+.cep button{
+    padding: 1rem;
+    width: calc(35% - .5rem);
+}
+
+.btnComprar button{
+    width: 100%;
+    background-color: gray;
+    border: none;
+    color: white;
+    border-radius: .2rem;
+    padding: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+
+.btnComprar button:hover{
+    background-color: #292929;
+}
+
+.desconto{
+    color: rgb(204, 29, 29);
+}
+
+.valorAnterior{
+    text-decoration: line-through;
+    font-weight: normal;
+}
+
+@media (max-width: 400px){
+    .cep div{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .cep input{
+        width: 100%;
+    }
+
+    .cep button{
+        width: 100%;
+    }
+}

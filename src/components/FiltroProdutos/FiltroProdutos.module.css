@@ -1,0 +1,43 @@
+.categoriaAtual{
+    display: inline-block;
+    color: gray;
+    border-bottom: 2px solid gray;
+    margin-bottom: 1rem;
+}
+
+.divFiltro{
+    display: flex;
+    gap: .5rem;
+}
+
+.divFiltro input[type=text]{
+    padding: .5rem;
+    width: 40%;
+    border: 1px solid #b2b2b2;
+} 
+
+.divFiltro input[type=button]{
+    padding: .5rem;
+    background-color: #292929;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+    .divFiltro input[type=text]{
+        width: 60%;
+    } 
+}
+
+@media (max-width: 500px){
+    .divFiltro{
+        flex-direction: column;
+    }
+
+    .divFiltro input{
+        width: 100% !important;
+    } 
+
+}

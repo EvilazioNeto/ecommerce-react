@@ -1,0 +1,31 @@
+nav{
+    width: 100%;
+}
+
+.navCategorias{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navCategorias .listaCategorias{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: .5rem;
+}
+
+.listaCategorias li a{
+    cursor: pointer;
+    color: gray;
+    border: none;
+    font-weight: bold;
+}
+
+.listaCategorias li:hover{
+    text-decoration: underline;
+}

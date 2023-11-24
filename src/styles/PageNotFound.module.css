@@ -1,0 +1,33 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.voltar{
+    background-color: #dcdcdc;
+    padding: .5rem;
+    color: black;
+    border-radius: .2rem;
+    transition: .3s ease;
+}
+
+.voltar:hover{
+    background-color: rgba(15, 14, 14, 0.781);
+    color: white;
+}
+
+.pnfTitle{
+    text-align: center;
+}
+
+.logo{
+    width: 300px;
+}

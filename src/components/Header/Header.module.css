@@ -1,0 +1,329 @@
+.showHideCategoria{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: .3rem;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.showHideCategoria p i{
+    font-size: 1.5rem;
+}
+
+.showHideCategoria p{
+    font-size: 1rem;
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+
+
+.opcoesUsuario, .linksUteis i{
+    font-size: 2rem;
+}
+
+header{
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerContent{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid gray;
+    gap: .5rem;
+}
+
+header div{
+    width: calc(33.3% - .5rem);
+}
+
+header div a{
+    text-decoration: none;
+    color: #292929;
+}
+
+.novidades{
+    width: 100%;
+    padding: .2rem;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.novidades p{
+    color: #fff;
+    font-weight: bold;
+}
+
+.novidades p:nth-child(3){
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+    
+}
+
+.linksUteis{
+    display: flex;
+    gap: 1rem;
+}
+
+.opcoesUsuario{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.opcoesUsuario a:nth-child(2) i{
+    transition: .2s ease;
+}
+
+.opcoesUsuario a:nth-child(2):hover i{
+    color: red;
+}
+
+.divLogo a{
+    display: flex;
+    justify-content: center;
+}
+
+.divLogo img{
+    width: 30%;
+}
+
+.headerCategorias{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerCategorias .listaCategorias{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: .5rem;
+}
+
+.listaCategorias li{
+    cursor: pointer;
+    color: gray;
+    border: none;
+    font-weight: bold;
+}
+
+.listaCategorias li:hover{
+    text-decoration: underline;
+}
+
+.nav-mobile{
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.nav_mobile_menu{
+    position: absolute;
+    width: 0;
+    background-color: gray;
+    visibility: hidden;
+}
+
+.userInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+.userInfo img{
+    border-radius: 50%;
+    padding: .5rem;
+    background-color: #fff;
+}
+
+.userInfo p{
+    font-weight: bold;
+    color: #fff;
+}
+
+.dadosUser{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 1rem;
+    padding-left: .5rem;
+}
+
+@media (max-width: 1000px){
+    .listaCategorias li{
+        font-size: 0.6rem;
+    }  
+}
+
+@media (max-width: 850px){
+    .novidades{
+        display: none;
+    }
+
+    i{
+        font-size: 1.5rem;
+    }
+
+    .linksUteis a{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 750px){
+    header div{
+        width: calc(50% - .5rem);
+    }
+
+    .opcoesUsuario{
+        justify-content: center;
+    }
+
+    .linksUteis{
+        display: none;
+    }
+
+    .divLogo img{
+        width: 30%;
+    }
+
+    .headerCategorias .listaCategorias{
+        gap: 1.5rem;
+    }
+
+    .listaCategorias li{
+        font-size: .5rem;
+    }
+
+}
+
+@media (max-width: 550px){
+    .divLogo{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .divLogo a{
+        justify-content: flex-start;
+    }
+
+    .opcoesUsuario a:nth-child(1){
+        display: none;
+    }
+
+    .hide{
+        display: flex;
+    }
+
+    .opcoesUsuario{
+        justify-content: flex-end;
+    }
+
+    .divLogo img{
+        width: 60%;
+    }
+
+    .headerCategorias{
+        visibility: hidden;
+        height: 0;
+        background-color: gray;
+        position: relative;
+        transition: .1s ease;
+    }
+
+    .headerCategorias.visible{
+        visibility: visible;
+        height: 150px;
+        transition: .5s ease;
+    }
+
+    .headerCategorias .listaCategorias{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        padding-top: .5rem;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+    }
+
+    .listaCategorias li{
+        color: white;
+    }
+
+    .listaCategorias li:hover{
+        border-bottom: none;
+        text-decoration: underline;
+    }
+
+    .nav_mobile_menu{
+        display: flex;
+        flex-direction: column;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        transition: .2s ease;
+        color: white;
+    }
+    
+    .nav_mobile_menu.activeMenu{
+        position: fixed;
+        overflow-y: scroll;
+        width: 100%;
+        height: 100%;
+        visibility: visible;
+        transition: .5s ease;
+    }
+
+    body.desativarScroll{
+        overflow: hidden;
+    }
+
+
+    .nav_mobile_menu > .userInfo{
+        visibility: hidden;
+    }
+
+    .nav_mobile_menu.activeMenu > .userInfo{
+        visibility: visible;
+    }
+
+    .nav_mobile_menu > .dadosUser{
+        visibility: hidden;
+    }
+
+    .nav_mobile_menu.activeMenu > .dadosUser{
+        visibility: visible;
+    }
+
+    .fa-bars{
+        z-index: 1000;
+    }
+}

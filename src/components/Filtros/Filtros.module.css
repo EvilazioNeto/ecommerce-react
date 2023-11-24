@@ -1,0 +1,88 @@
+.filtros{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    color: #292929;
+    padding: .5rem;
+    border-radius: .2rem;
+    border: 1px solid #b2b2b2;
+}
+
+.filtros p{
+    color: #292929;
+    font-weight: bold;
+}
+
+.filtros label{
+    color: gray;
+}
+
+.filtros input{
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid gray;
+    border-radius: .2rem;
+}
+
+.filtros button{
+    width: 100%;
+    padding: .5rem;
+    background-color: #292929;
+    color: white;
+    font-weight: bold;
+    border-radius: .3rem;
+    border: none;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.filtros button:hover{
+    background-color: gray;
+}
+
+.marcas{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.marcas input{
+    width: auto;
+    padding: 0;
+}
+
+#categoriaAtual{
+    display: inline-block;
+    color: gray;
+    border-bottom: 2px solid gray;
+    margin-bottom: 1rem;
+}
+
+.categoriaAtual{
+    display: inline-block;
+    color: gray;
+    border-bottom: 2px solid gray;
+    margin-bottom: 1rem;
+}
+
+.rating{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.rating div i{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 750px){
+    .marcas{
+        display: none;
+    }
+
+    .rating{
+        display: none;
+    }
+}
