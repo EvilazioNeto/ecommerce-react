@@ -14,6 +14,7 @@ import CategoriaCosmeticos from "./pages/cosmeticos";
 import PageNotFound from "./pages/pageNotFound";
 import Produto from "./pages/Produto/Produto";
 import ProdutoProps from "./types/ProdutoProps";
+import Carrinho from "./pages/carrinho";
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
             <Route path="/categorias/veiculos" element={<CategoriaVeiculos produtos={produtos} />} />
             <Route path="/categorias/decoracao" element={<CategoriaDecoracao produtos={produtos} />} />
             <Route path="/categorias/cosmeticos" element={<CategoriaCosmeticos produtos={produtos} />} />
+            <Route path="/carrinho" element={<Carrinho />} />
             <Route path="/produto/:produtoId" element={<Produto />}/>
             <Route path="/" element={<CategoriaEletronicos produtos={produtos} />} />
             <Route path="*" element={<PageNotFound />} />

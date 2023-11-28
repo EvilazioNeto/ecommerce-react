@@ -1,11 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProdutoProps from "../../../types/ProdutoProps";
 import styles from "./InfoProduto.module.css"
 
-
 function InfoProduto({ produto }: { produto: ProdutoProps }) {
+    const [itensCarrinho, setItensCarrinho] = useState<ProdutoProps[]>([])
     const [cep, setCep] = useState<number>()
     const [meuEndereco, setMeuEndereco] = useState<any>()
+
+    useEffect(()=>{
+        const produtosSalvosString = localStorage.getItem('itens')
+        if(produtosSalvosString){
+            const produtosSalvos = JSON.parse(produtosSalvosString)
+            setItensCarrinho(produtosSalvos)
+        }
+    }, [])
+
+    function adicionarProduto(produto: ProdutoProps){
+        if(!itensCarrinho.includes(produto)){
+            const novosProdutos = [...itensCarrinho, produto]
+            setItensCarrinho(novosProdutos)
+            localStorage.setItem('itens', JSON.stringify(novosProdutos));
+        }
+    }
 
     async function buscarCEP() {
         await fetch(`https://viacep.com.br/ws/${cep}/json/`)
@@ -51,7 +67,7 @@ function InfoProduto({ produto }: { produto: ProdutoProps }) {
                 )}
             </div>
             <div className={styles.btnComprar}>
-                <button>COMPRAR</button>
+                <button onClick={()=> adicionarProduto(produto)}>COMPRAR</button>
             </div>
         </>
     )
