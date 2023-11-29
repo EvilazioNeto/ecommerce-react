@@ -27,6 +27,8 @@ function App() {
         return res.json()
       }).then((data) => {
         setProdutos(data.products)
+      }).catch((error)=>{
+        console.log(error)
       })
   }, [])
              

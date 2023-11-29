@@ -1,8 +1,29 @@
+import { useState, useEffect } from "react"
 import ProdutoProps from "../types/ProdutoProps"
 
 function Carrinho() {
-    let itensCarrinhoString = localStorage.getItem('itens')
-    let itensCarrinho = itensCarrinhoString ? JSON.parse(itensCarrinhoString) : []
+    const [itensCarrinho, setItensCarrinho] = useState<ProdutoProps[]>([]) 
+    
+    useEffect(()=>{
+        const itensCarrinhoString = localStorage.getItem('itens')
+        const itensCarrinhoLocal = itensCarrinhoString ? JSON.parse(itensCarrinhoString) : []
+        setItensCarrinho(itensCarrinhoLocal)
+    }, [])
+
+
+
+    function removerProduto(produto: ProdutoProps){
+            if(confirm(`Deseja remover o ${produto.title} do carrinho?`)){
+                const novosItensCarrinho = [...itensCarrinho]
+
+                const indexProduto = novosItensCarrinho.indexOf(produto)
+                if(indexProduto !== -1){
+                    novosItensCarrinho.splice(indexProduto, 1);
+                }
+                setItensCarrinho(novosItensCarrinho)
+                localStorage.setItem('itens', JSON.stringify(novosItensCarrinho))
+            }
+    }
 
     return (
         <>
@@ -12,6 +33,7 @@ function Carrinho() {
                     <div key={i}>
                         <h3>{produto.title}</h3>
                         <img src={produto.thumbnail} alt="" />
+                        <button onClick={()=> removerProduto(produto)}>Remover</button>
                     </div>
                 ))
             ) : (
