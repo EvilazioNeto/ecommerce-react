@@ -1,0 +1,100 @@
+.tituloComentarios{
+    font-size: 2rem;
+    color: gray;
+}
+
+.containerComentarios{
+    width: 35%;
+}
+
+.containerComentarios .yourComment{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.containerComentarios .yourComment textarea{
+    width: 100% !important;
+    padding: .5rem;
+    font-size: 1rem;
+    height: 250px;
+}
+
+.yourComment button{
+    background-color: gray;
+    border: none;
+    color: white;
+    border-radius: .2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.comentariosUsers{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.yourComment textarea{
+    resize: none;
+}
+
+.divComments label{
+    font-size: 1.3rem;
+    color: #292929;
+}
+
+.divComments p{
+    color: gray;
+    font-size: 1.2rem;
+    margin-top: .5rem;
+}
+
+.divComments label i:nth-child(1){
+    border: 1px solid #292929;
+    border-radius: 50%;
+    padding: .5rem;
+}
+
+.thumbs_up_down label i{
+    border: none !important;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px){
+    .containerComentarios{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .comentariosUsers{
+        width: 100%;
+    }
+
+    .tituloComentarios{
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px){
+    .containerComentarios{
+        width: 100%;
+    }
+    .tituloComentarios{
+        font-size: 1.5rem;
+    }
+
+    .divComments label{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .divComments p{
+        font-size: 1rem;
+    }
+
+    .containerComentarios .yourComment textarea{
+        height: 150px;
+    }
+}

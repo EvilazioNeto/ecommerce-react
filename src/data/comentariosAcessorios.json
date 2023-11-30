@@ -1,0 +1,53 @@
+[
+    {
+      "descricao": "Comprei um par de óculos de sol estilosos, a proteção UV é excelente.",
+      "usuario": "Larissa Oliveira",
+      "avaliacao": 4.7
+    },
+    {
+      "descricao": "Os sapatos são confortáveis e elegantes, perfeitos para ocasiões especiais.",
+      "usuario": "Renato Silva",
+      "avaliacao": 4.5
+    },
+    {
+      "descricao": "Minha nova bolsa é espaçosa e combina com vários looks, estou encantada.",
+      "usuario": "Camila Lima",
+      "avaliacao": 4.9
+    },
+    {
+      "descricao": "Comprei um anel delicado, a qualidade dos materiais é impressionante.",
+      "usuario": "André Martins",
+      "avaliacao": 4.2
+    },
+    {
+      "descricao": "Óculos de leitura com design moderno, facilitam minha vida diária.",
+      "usuario": "Fernanda Costa",
+      "avaliacao": 4.8
+    },
+    {
+      "descricao": "Sapatos de festa incríveis, chamaram a atenção de todos na festa.",
+      "usuario": "Rafaela Santos",
+      "avaliacao": 4.6
+    },
+    {
+      "descricao": "Bolsa prática para o dia a dia, os compartimentos ajudam a manter tudo organizado.",
+      "usuario": "José Oliveira",
+      "avaliacao": 4.3
+    },
+    {
+      "descricao": "Anel personalizado com as iniciais, um presente único e especial.",
+      "usuario": "Mariano Lima",
+      "avaliacao": 5.0
+    },
+    {
+      "descricao": "Óculos de sol de alta qualidade, a entrega foi rápida e segura.",
+      "usuario": "Juliana Souza",
+      "avaliacao": 4.7
+    },
+    {
+      "descricao": "Sapatos confortáveis para longas caminhadas, recomendo para quem busca conforto.",
+      "usuario": "Giovana Oliveira",
+      "avaliacao": 4.4
+    }
+  ]
+  

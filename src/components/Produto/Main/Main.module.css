@@ -1,10 +1,15 @@
-.containerProduto{
+.mainProduto{
     display: flex;
-    margin-top: 1rem;
-    gap: .5rem;
+    flex-direction: column;
     width: 100%;
     max-width: 1920px;
     padding: .5rem;
+    margin-top: 1rem;
+}
+
+.containerProduto{
+    display: flex;
+    gap: .5rem;
     align-items: flex-start;
     justify-content:space-around;
 }
@@ -28,8 +33,26 @@
     gap: .5rem;
 }
 
+.containerComentarios{
+    margin-top: 1rem;
+}
+
+.containerComentarios section:nth-child(1){
+    width: 100%;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid gray;
+    gap: 2rem;
+}
+
+
 
 @media (max-width: 1000px){
+    .containerComentarios section:nth-child(1){
+        flex-direction: column;
+    }
+    
     .containerProduto{
         flex-direction: column;
     }
@@ -47,5 +70,9 @@
     .containerProduto section:nth-child(1){
         flex-direction: column-reverse;
 
+    }
+
+    .containerComentarios section:nth-child(1){
+        gap: 1rem;
     }
 }

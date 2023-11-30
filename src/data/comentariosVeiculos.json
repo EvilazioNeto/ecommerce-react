@@ -1,0 +1,53 @@
+[
+    {
+      "descricao": "Comprei uma bateria nova para meu carro, a partida agora é instantânea.",
+      "usuario": "Lucas Oliveira",
+      "avaliacao": 4.9
+    },
+    {
+      "descricao": "O capacete é confortável e atende aos padrões de segurança, estou satisfeito.",
+      "usuario": "Mariana Costa",
+      "avaliacao": 4.5
+    },
+    {
+      "descricao": "Troquei os pneus da minha moto, a aderência na estrada melhorou consideravelmente.",
+      "usuario": "Rafael Santos",
+      "avaliacao": 4.7
+    },
+    {
+      "descricao": "Peças de reposição de alta qualidade, meu veículo está funcionando como novo.",
+      "usuario": "Carla Lima",
+      "avaliacao": 4.2
+    },
+    {
+      "descricao": "Capacete estiloso e resistente, a viseira proporciona boa visibilidade.",
+      "usuario": "Gustavo Almeida",
+      "avaliacao": 4.8
+    },
+    {
+      "descricao": "Adquiri um novo escapamento para minha moto, o som e desempenho melhoraram.",
+      "usuario": "Isabela Souza",
+      "avaliacao": 4.6
+    },
+    {
+      "descricao": "As pastilhas de freio são duráveis e proporcionam uma frenagem eficaz.",
+      "usuario": "Fernando Oliveira",
+      "avaliacao": 4.3
+    },
+    {
+      "descricao": "Capacete de alta tecnologia, com sistema de comunicação integrado.",
+      "usuario": "Juliana Lima",
+      "avaliacao": 5.0
+    },
+    {
+      "descricao": "Peças originais de fábrica, garantindo a confiabilidade do meu veículo.",
+      "usuario": "Rodrigo Martins",
+      "avaliacao": 4.7
+    },
+    {
+      "descricao": "Moto esportiva de última geração, atendeu todas as minhas expectativas.",
+      "usuario": "Amanda Pereira",
+      "avaliacao": 4.4
+    }
+  ]
+  

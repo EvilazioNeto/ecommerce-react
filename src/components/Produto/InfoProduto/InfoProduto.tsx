@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ProdutoProps from "../../../types/ProdutoProps";
 import styles from "./InfoProduto.module.css"
+import { Link } from "react-router-dom";
 
 function InfoProduto({ produto }: { produto: ProdutoProps }) {
     const [itensCarrinho, setItensCarrinho] = useState<ProdutoProps[]>([])
@@ -67,7 +68,9 @@ function InfoProduto({ produto }: { produto: ProdutoProps }) {
                 )}
             </div>
             <div className={styles.btnComprar}>
-                <button onClick={()=> adicionarProduto(produto)}>COMPRAR</button>
+                <Link to="/carrinho">
+                    <button onClick={()=> adicionarProduto(produto)}>COMPRAR</button>
+                </Link>
             </div>
         </>
     )

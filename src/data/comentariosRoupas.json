@@ -1,0 +1,52 @@
+[
+  {
+    "descricao": "Ótima loja de roupas, variedade incrível e preços acessíveis.",
+    "usuario": "Patrícia Santos",
+    "avaliacao": 4.8
+  },
+  {
+    "descricao": "A qualidade do tecido das camisetas é excepcional, mas os tamanhos são um pouco pequenos.",
+    "usuario": "Ricardo Oliveira",
+    "avaliacao": 3.5
+  },
+  {
+    "descricao": "Adorei a coleção primavera/verão, as cores são vibrantes e as peças estão na moda.",
+    "usuario": "Isabela Pereira",
+    "avaliacao": 4.7
+  },
+  {
+    "descricao": "Boa opção para encontrar roupas básicas a preços acessíveis.",
+    "usuario": "Fábio Silva",
+    "avaliacao": 4.0
+  },
+  {
+    "descricao": "O atendimento na loja é excelente, os vendedores são prestativos e atenciosos.",
+    "usuario": "Camila Lima",
+    "avaliacao": 4.9
+  },
+  {
+    "descricao": "Comprei um casaco de inverno e estou muito satisfeito com a qualidade e o estilo.",
+    "usuario": "Diego Almeida",
+    "avaliacao": 4.5
+  },
+  {
+    "descricao": "As calças jeans são duráveis, mas seria bom ter mais opções de lavagens.",
+    "usuario": "Tatiane Costa",
+    "avaliacao": 3.8
+  },
+  {
+    "descricao": "Entrega rápida e as roupas chegaram em perfeitas condições.",
+    "usuario": "Vinícius Martins",
+    "avaliacao": 5.0
+  },
+  {
+    "descricao": "Adoro as promoções da loja, sempre encontro boas ofertas.",
+    "usuario": "Gabriela Pereira",
+    "avaliacao": 4.2
+  },
+  {
+    "descricao": "Vestiário espaçoso e provadores bem iluminados, facilitando a escolha das roupas.",
+    "usuario": "Luciana Almeida",
+    "avaliacao": 4.6
+  }
+]

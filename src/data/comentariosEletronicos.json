@@ -1,0 +1,53 @@
+[
+    {
+      "descricao": "Ótimo smartphone, desempenho incrível e câmera de alta qualidade.",
+      "usuario": "Ana Silva",
+      "avaliacao": 4.5
+    },
+    {
+      "descricao": "A bateria dura bastante, mas a tela poderia ter uma resolução melhor.",
+      "usuario": "Carlos Oliveira",
+      "avaliacao": 3.8
+    },
+    {
+      "descricao": "Produto excelente, entrega rápida e em perfeitas condições.",
+      "usuario": "Mariana Souza",
+      "avaliacao": 5.0
+    },
+    {
+      "descricao": "Boa relação custo-benefício, mas a memória interna poderia ser maior.",
+      "usuario": "Rafael Santos",
+      "avaliacao": 4.0
+    },
+    {
+      "descricao": "Design moderno, mas o sistema operacional poderia ser mais intuitivo.",
+      "usuario": "Juliana Lima",
+      "avaliacao": 3.5
+    },
+    {
+      "descricao": "O notebook é leve e rápido, perfeito para trabalho e estudos.",
+      "usuario": "Lucas Oliveira",
+      "avaliacao": 4.7
+    },
+    {
+      "descricao": "A qualidade da câmera frontal é decepcionante, mas o desempenho geral é satisfatório.",
+      "usuario": "Fernanda Costa",
+      "avaliacao": 3.2
+    },
+    {
+      "descricao": "Fácil de configurar e usar. A entrega foi antes do prazo previsto.",
+      "usuario": "Rodrigo Martins",
+      "avaliacao": 4.9
+    },
+    {
+      "descricao": "O som do aparelho é potente, mas a durabilidade da bateria poderia ser melhor.",
+      "usuario": "Amanda Pereira",
+      "avaliacao": 4.1
+    },
+    {
+      "descricao": "Excelente custo-benefício, atendeu todas as minhas expectativas.",
+      "usuario": "Gustavo Almeida",
+      "avaliacao": 4.8
+    }
+  ]
+  
