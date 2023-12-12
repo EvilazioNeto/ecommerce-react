@@ -16,14 +16,16 @@ function InfoProduto({ produto }: { produto: ProdutoProps }) {
         }
     }, [])
 
-    function adicionarProduto(produto: ProdutoProps){
-        if(!itensCarrinho.includes(produto)){
-            const novosProdutos = [...itensCarrinho, produto]
-            setItensCarrinho(novosProdutos)
+    function adicionarProduto(produto: ProdutoProps) {
+        const produtoJaNoCarrinho = itensCarrinho.find(item => item.id === produto.id);
+    
+        if (!produtoJaNoCarrinho) {
+            const novosProdutos = [...itensCarrinho, produto];
+            setItensCarrinho(novosProdutos);
             localStorage.setItem('itens', JSON.stringify(novosProdutos));
         }
     }
-
+    
     async function buscarCEP() {
         await fetch(`https://viacep.com.br/ws/${cep}/json/`)
             .then((res) => {

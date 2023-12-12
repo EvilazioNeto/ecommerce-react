@@ -1,0 +1,46 @@
+.container_produto{
+    display: flex;
+    gap: 1rem;
+    background-color: white;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.container_info{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.container_produto .divImagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.container_produto .info_produto{
+    display: flex;
+    gap: .5rem;
+}
+
+.container_produto select{
+    padding: .5rem;
+}
+
+.container_produto .divImagem .imagemProduto{
+    max-width: 100%; 
+    border-radius: .5rem;
+}
+
+.container_produto .container_info{
+    width: 70%;
+}
+
+.container_produto .divValor{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+}
