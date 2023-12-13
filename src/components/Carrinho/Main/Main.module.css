@@ -2,18 +2,3 @@
     display: flex;
 }
 
-.mainCarrinho .section1_carrinho{
-    background-color: #DCDCDC;
-    width: 75%;
-    padding: .5rem;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-
-.mainCarrinho .section2_carrinho{
-    width: 25%;
-    border: 1px solid gray;
-    border-radius: .5rem;
-    padding: .5rem;
-}

@@ -26,8 +26,8 @@ function InfoProduto({ produto }: { produto: ProdutoProps }) {
         }
     }
     
-    async function buscarCEP() {
-        await fetch(`https://viacep.com.br/ws/${cep}/json/`)
+    function buscarCEP() {
+        fetch(`https://viacep.com.br/ws/${cep}/json/`)
             .then((res) => {
                 return res.json()
             }).then((data) => {
@@ -63,7 +63,7 @@ function InfoProduto({ produto }: { produto: ProdutoProps }) {
                 </div>
 
                 {meuEndereco && (
-                    <div>
+                    <div className={styles.meuEndereco}>
                         <p>Localidade: {meuEndereco.localidade}</p>
                         <p>UF: {meuEndereco.uf}</p>
                     </div> 

@@ -44,3 +44,24 @@
     display: flex;
     justify-content: end;
 }
+
+.section1_carrinho{
+    background-color: #DCDCDC;
+    width: 75% !important;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.section2_carrinho{
+    width: 25% !important;
+    border: 1px solid gray;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.productNotFound{
+    display: flex;
+    justify-content: center;
+}

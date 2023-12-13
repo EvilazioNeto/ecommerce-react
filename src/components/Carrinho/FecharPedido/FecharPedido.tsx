@@ -1,11 +1,11 @@
 import styles from "./FecharPedido.module.css";
 
-function FecharPedido() {
+function FecharPedido({valorTotal}: {valorTotal: number}) {
 
   return (
     <>
       <div className={styles.comprar}>
-        <h2>Subtotal: </h2>
+        <h2>Subtotal: ${valorTotal}</h2>
         <button>Fechar Pedido</button>
       </div>
     </>
