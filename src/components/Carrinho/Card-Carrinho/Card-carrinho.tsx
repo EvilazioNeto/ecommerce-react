@@ -41,7 +41,9 @@ function CardCarrinho() {
                     itensCarrinho.map((produto: ProdutoProps) => (
                         <div className={styles.container_produto} key={produto.id}>
                             <div className={styles.divImagem}>
-                                <img className={styles.imagemProduto} src={produto.thumbnail} alt="" />
+                                <a href={`/produto/${produto.id}`}>
+                                    <img className={styles.imagemProduto} src={produto.thumbnail} alt="" />
+                                </a>
                             </div>
                             <div className={styles.container_info}>
                                 <h2>{produto.title}</h2>
