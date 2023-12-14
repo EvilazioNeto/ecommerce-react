@@ -10,6 +10,7 @@ interface ProdutoProps {
     rating: number;
     thumbnail: string;
     images: string[];
+    quantity?: number
 }
 
 export default ProdutoProps;
