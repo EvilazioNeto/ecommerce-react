@@ -65,3 +65,30 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 750px){
+    .section1_carrinho{
+        width: 100% !important;
+    }
+
+    .section2_carrinho{
+        width: 100% !important;
+    }  
+    
+    .container_produto .divImagem{
+        max-width: 120px;
+        height: 120px;
+    }    
+}
+
+@media (max-width: 500px){
+    .container_produto h2{
+        font-size: 1rem;
+    }
+
+    .container_produto .divImagem{
+        max-width: 120px;
+        height: auto;
+        max-height: 100px;
+    }  
+}
