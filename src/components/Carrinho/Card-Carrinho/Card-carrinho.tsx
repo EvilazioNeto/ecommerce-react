@@ -21,7 +21,7 @@ function CardCarrinho() {
     function calcularValorTotal() {
         let subtotal: number = 0;
         itensCarrinho.forEach((item) => {
-            subtotal += item.price * (item.quantity || 1); // Considera a quantidade, padrão para 1 se não estiver definida
+            subtotal += item.price * (item.quantity || 1);
         });
         setValorTotal(subtotal);
     }
