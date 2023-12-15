@@ -1,7 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import './styles/App.css'
 import './styles/index.css'
-import Contatos from "./pages/contatos";
 import Layout from "./layout/Layout";
 import CategoriaEletronicos from "./pages/eletronicos";
 import { useEffect, useState } from "react";
@@ -15,6 +14,8 @@ import PageNotFound from "./pages/pageNotFound";
 import Produto from "./pages/Produto/Produto";
 import ProdutoProps from "./types/ProdutoProps";
 import Carrinho from "./pages/carrinho";
+import ProdutosFiltrados from "./pages/produtosFiltrados";
+import { ProdutoProvider } from "./context/ProdutoContext";
 
 
 function App() {
@@ -27,31 +28,33 @@ function App() {
         return res.json()
       }).then((data) => {
         setProdutos(data.products)
-      }).catch((error)=>{
+      }).catch((error) => {
         console.log(error)
       })
   }, [])
-             
+
   return (
     <>
-      <Router>
-        <Layout>
-          <Routes>
-            <Route path="/contatos" element={<Contatos />} />
-            <Route path="/categorias/eletronicos" element={<CategoriaEletronicos produtos={produtos} />} />
-            <Route path="/categorias/roupas" element={<CategoriaRoupas produtos={produtos} />} />
-            <Route path="/categorias/relogios" element={<CategoriaRelogios produtos={produtos} />} />
-            <Route path="/categorias/acessorios" element={<CategoriaAcessorios produtos={produtos} />} />
-            <Route path="/categorias/veiculos" element={<CategoriaVeiculos produtos={produtos} />} />
-            <Route path="/categorias/decoracao" element={<CategoriaDecoracao produtos={produtos} />} />
-            <Route path="/categorias/cosmeticos" element={<CategoriaCosmeticos produtos={produtos} />} />
-            <Route path="/carrinho" element={<Carrinho />} />
-            <Route path="/produto/:produtoId" element={<Produto />}/>
-            <Route path="/" element={<CategoriaEletronicos produtos={produtos} />} />
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>  
-        </Layout>
-      </Router>
+      <ProdutoProvider>
+        <Router>
+          <Layout>
+            <Routes>
+              <Route path="/categorias/eletronicos" element={<CategoriaEletronicos produtos={produtos} />} />
+              <Route path="/categorias/roupas" element={<CategoriaRoupas produtos={produtos} />} />
+              <Route path="/categorias/relogios" element={<CategoriaRelogios produtos={produtos} />} />
+              <Route path="/categorias/acessorios" element={<CategoriaAcessorios produtos={produtos} />} />
+              <Route path="/categorias/veiculos" element={<CategoriaVeiculos produtos={produtos} />} />
+              <Route path="/categorias/decoracao" element={<CategoriaDecoracao produtos={produtos} />} />
+              <Route path="/categorias/cosmeticos" element={<CategoriaCosmeticos produtos={produtos} />} />
+              <Route path="/categorias/produtos" element={<ProdutosFiltrados />} />
+              <Route path="/carrinho" element={<Carrinho />} />
+              <Route path="/produto/:produtoId" element={<Produto />} />
+              <Route path="/" element={<CategoriaEletronicos produtos={produtos} />} />
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
+          </Layout>
+        </Router>
+      </ProdutoProvider>
     </>
   )
 }
