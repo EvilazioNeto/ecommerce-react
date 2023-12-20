@@ -1,0 +1,101 @@
+.containerLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.containerLogin div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerLogin form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerLogin .divLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerLogin .divLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divLogin p{
+    font-size: 1.2rem;
+}
+
+.divLogin div{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.divLogin div .userOptions{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.divLogin button{
+    background-color: #292929;
+    border: none;
+    padding: .5rem;
+    color: #fff;
+    border-radius: .2rem;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.divLogin button:hover {
+    background-color: #555;
+}
+
+.containerLogin .divLogin input{
+    padding: .5rem;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+
+.containerLogin .divLogo img{
+    width: 70%;
+}
+
+@media (max-width: 800px){
+    .containerLogin{
+        flex-direction: column;
+        padding: .5rem;
+    }    
+
+    .containerLogin div{
+        width: 95%;
+    }
+
+    .containerLogin form{
+        width: 95%;
+    }
+}
+
+@media (max-width: 300px){
+    .divLogin div .userOptions{
+        flex-direction: column;
+    }
+}

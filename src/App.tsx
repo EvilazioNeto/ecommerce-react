@@ -16,6 +16,7 @@ import ProdutoProps from "./types/ProdutoProps";
 import Carrinho from "./pages/carrinho";
 import ProdutosFiltrados from "./pages/produtosFiltrados";
 import { ProdutoProvider } from "./context/ProdutoContext";
+import Login from "./components/Login/Login";
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
               <Route path="/produto/:produtoId" element={<Produto />} />
               <Route path="/" element={<CategoriaEletronicos produtos={produtos} />} />
               <Route path="*" element={<PageNotFound />} />
+              <Route path="/login" element={<Login />} />
             </Routes>
           </Layout>
         </Router>

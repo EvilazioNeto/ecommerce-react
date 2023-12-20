@@ -8,8 +8,6 @@ function FiltroProdutos({ nome }: any) {
     const produtoContext = useProdutoContext();
     const navigate = useNavigate();
 
-
-
     function filtrarProduto(pesquisa: string) {
         if (pesquisa) {
             fetch(`https://dummyjson.com/products/search?q=${pesquisa}`)
@@ -20,7 +18,6 @@ function FiltroProdutos({ nome }: any) {
                 });
         }
     }
-
 
     return (
         <>
