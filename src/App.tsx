@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import './styles/App.css'
 import './styles/index.css'
 import Layout from "./layout/Layout";
@@ -18,9 +18,7 @@ import ProdutosFiltrados from "./pages/produtosFiltrados";
 import { ProdutoProvider } from "./context/ProdutoContext";
 import Login from "./components/Login/Login";
 
-
 function App() {
-
   const [produtos, setProdutos] = useState<ProdutoProps[]>([]);
 
   useEffect(() => {
@@ -33,6 +31,17 @@ function App() {
         console.log(error)
       })
   }, [])
+
+  function verificarLogin(component: any){
+    let token: any = localStorage.getItem('tokenUser');
+    let newToken = JSON.parse(token)
+  
+    if(newToken){
+      return component;
+    }else{
+      return <Navigate to='/login' />;
+    }
+  }
 
   return (
     <>
@@ -48,7 +57,7 @@ function App() {
               <Route path="/categorias/decoracao" element={<CategoriaDecoracao produtos={produtos} />} />
               <Route path="/categorias/cosmeticos" element={<CategoriaCosmeticos produtos={produtos} />} />
               <Route path="/categorias/produtos" element={<ProdutosFiltrados />} />
-              <Route path="/carrinho" element={<Carrinho />} />
+              <Route path="/carrinho" element={verificarLogin(<Carrinho />)} />
               <Route path="/produto/:produtoId" element={<Produto />} />
               <Route path="/" element={<CategoriaEletronicos produtos={produtos} />} />
               <Route path="*" element={<PageNotFound />} />
