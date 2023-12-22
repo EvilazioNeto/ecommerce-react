@@ -3,7 +3,7 @@ import './styles/App.css'
 import './styles/index.css'
 import Layout from "./layout/Layout";
 import CategoriaEletronicos from "./pages/eletronicos";
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import CategoriaRoupas from "./pages/roupas";
 import CategoriaRelogios from "./pages/relogios";
 import CategoriaAcessorios from "./pages/acessorios";
@@ -17,6 +17,7 @@ import Carrinho from "./pages/carrinho";
 import ProdutosFiltrados from "./pages/produtosFiltrados";
 import { ProdutoProvider } from "./context/ProdutoContext";
 import Login from "./components/Login/Login";
+import Usuario from "./pages/usuario";
 
 function App() {
   const [produtos, setProdutos] = useState<ProdutoProps[]>([]);
@@ -32,7 +33,7 @@ function App() {
       })
   }, [])
 
-  function verificarLogin(component: any){
+  function verificarLogin(component: ReactNode): ReactNode{
     let token: any = localStorage.getItem('tokenUser');
     let newToken = JSON.parse(token)
   
@@ -60,8 +61,9 @@ function App() {
               <Route path="/carrinho" element={verificarLogin(<Carrinho />)} />
               <Route path="/produto/:produtoId" element={<Produto />} />
               <Route path="/" element={<CategoriaEletronicos produtos={produtos} />} />
-              <Route path="*" element={<PageNotFound />} />
+              <Route path="/usuario" element={verificarLogin(<Usuario />)}/>
               <Route path="/login" element={<Login />} />
+              <Route path="*" element={<PageNotFound />} />
             </Routes>
           </Layout>
         </Router>

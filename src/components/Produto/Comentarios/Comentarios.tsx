@@ -38,7 +38,7 @@ function Comentarios({ categoria }: { categoria: string }) {
   return (
     <>
       <div className={styles.containerComentarios}>
-        <h1 className={styles.tituloComentarios}>Avaliação de clientes:</h1>
+        <h1 className={styles.tituloComentarios}>Avaliações de clientes:</h1>
         <div className={styles.yourComment}>
           <textarea placeholder="Faça seu comentário sobre o produto:"></textarea>
           <button>ENVIAR</button>

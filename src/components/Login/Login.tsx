@@ -22,8 +22,10 @@ function Login() {
                 const token = data.token
                 if(token){
                     localStorage.setItem("tokenUser", JSON.stringify(token))
+                    localStorage.setItem("usuario", JSON.stringify(data))
                     location.assign('/')
                 }else{
+                    alert("Login inválido")
                     console.log("Token não encontrado")
                 }
             })

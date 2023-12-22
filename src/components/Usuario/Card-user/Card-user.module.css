@@ -1,0 +1,80 @@
+.containerUsuario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 0px gray;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    margin: 2rem;
+    position: relative;
+}
+
+.containerUsuario .profileDetails{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.profileDetails img{
+    border-radius: 50%;
+    border: 3px solid gray;
+    width: 200px;
+}
+
+.containerUsuario .profileDetails{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.containerUsuario .additionalInfo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.additionalInfo span{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.logout{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: .2rem;
+    padding: .5rem;
+    cursor: pointer;
+    transition: .3s ease;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.logout:hover{
+    background-color: darkred;
+}
+
+.logout i{
+    font-size: 1rem;
+}
+
+@media (max-width: 400px){
+    .containerUsuario{
+        margin: 1rem;
+    }
+
+    .logout{
+        top: auto;
+        bottom: .5rem;
+        right: .5rem;
+    } 
+}
